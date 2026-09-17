@@ -1069,8 +1069,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525234f8de1ea454299ffe27aebd1083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fox
-  need: Tengo Hambre
-  afterInteraction: "\xA1Muchas gracias!"
+  dialogues:
+  - eventName: initial
+    text: " \xA1Tengo hambre! T_T"
+  - eventName: food
+    text: "\xA1Muchas gracias!"
   needText: {fileID: 722550107}
 --- !u!1 &186910207
 GameObject:
@@ -2164,7 +2167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432dd63f3f4d4f24abcdb4e912e03933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Restaurant
-  fox: {fileID: 2059122254}
 --- !u!1001 &469133870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6699,8 +6701,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525234f8de1ea454299ffe27aebd1083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fox
-  need: Vendo comida
-  afterInteraction: "\xA1Buen provecho!"
+  dialogues:
+  - eventName: initial
+    text: "\xA1Baratita la comida!"
+  - eventName: food
+    text: "\xA1Buen provecho!"
   needText: {fileID: 1654318348}
 --- !u!1001 &2070875161
 PrefabInstance:

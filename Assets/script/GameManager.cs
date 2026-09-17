@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public float RemainingTime
     {
         get { return remainingTime; }
+        private set { remainingTime = value; }
     }
 
     private void Awake()

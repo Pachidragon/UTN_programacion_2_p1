@@ -11,6 +11,11 @@ public class Fox : Character
     {
         base.Start();
 
+        if (dialogues.Count > 0)
+        {
+            needText.text = dialogues[0].text;
+        }
+
         GameManager.OnFoodObtained += ChangeText;
     }
 
@@ -21,6 +26,13 @@ public class Fox : Character
 
     public void ChangeText()
     {
-       
+        foreach (Dialogue dialogue in dialogues)
+        {
+            if (dialogue.eventName == "food")
+            {
+                needText.text = dialogue.text;
+                break;
+            }
+        }
     }
 }
