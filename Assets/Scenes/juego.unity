@@ -315,7 +315,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (5)
+      value: Platform_Normal_06
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,7 +468,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (8)
+      value: Platform_Normal_09
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 138334468}
   - component: {fileID: 138334470}
   m_Layer: 0
-  m_Name: Casa
+  m_Name: House
   m_TagString: Casa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 180141628}
   - component: {fileID: 180141627}
   m_Layer: 0
-  m_Name: zorroCasa
+  m_Name: FoxHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,7 +1052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 186910208}
   m_Layer: 0
-  m_Name: Tierra
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1085,7 +1085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192130444}
   m_Layer: 0
-  m_Name: limites
+  m_Name: limits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 201003359}
   - component: {fileID: 201003361}
   m_Layer: 0
-  m_Name: mov_derecha
+  m_Name: Platform_Right
   m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1280,7 +1280,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3684419301279990494, guid: bebcaba1cbb863f408da9c755be4dbf8, type: 3}
       propertyPath: m_Name
-      value: Fish_0 (1)
+      value: Fish_1
       objectReference: {fileID: 0}
     - target: {fileID: 8574466549746889865, guid: bebcaba1cbb863f408da9c755be4dbf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1513,7 +1513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328242289367499427, guid: e3a992fc1745dee468165e5eea170c4f, type: 3}
       propertyPath: m_Name
-      value: Jam_0 (2)
+      value: Jam_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1587,7 +1587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328242289367499427, guid: e3a992fc1745dee468165e5eea170c4f, type: 3}
       propertyPath: m_Name
-      value: Jam_0 (4)
+      value: Jam_4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1609,7 +1609,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (7)
+      value: Platform_Normal_08
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1671,7 +1671,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (4)
+      value: Platform_Normal_05
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1897,7 +1897,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm
+      value: Platform_Normal_01
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1995,7 +1995,7 @@ GameObject:
   - component: {fileID: 462944601}
   - component: {fileID: 462944603}
   m_Layer: 0
-  m_Name: Local
+  m_Name: Restaurant
   m_TagString: Local
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2131,7 +2131,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (5)
+      value: Platform_Normal_06
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2257,7 +2257,7 @@ GameObject:
   - component: {fileID: 477981764}
   - component: {fileID: 477981763}
   m_Layer: 0
-  m_Name: pine_0
+  m_Name: Tree_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2561,7 +2561,7 @@ GameObject:
   - component: {fileID: 635601733}
   - component: {fileID: 635601732}
   m_Layer: 0
-  m_Name: mov_arriba
+  m_Name: Platform_UpDown
   m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2719,7 +2719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (6)
+      value: Platform_Normal_07
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2782,7 +2782,7 @@ GameObject:
   - component: {fileID: 659138263}
   - component: {fileID: 659138264}
   m_Layer: 0
-  m_Name: Instrucciones
+  m_Name: InstructionsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2943,7 +2943,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (1)
+      value: Platform_Normal_02
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3309,7 +3309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886941737}
   m_Layer: 0
-  m_Name: Casas
+  m_Name: Houses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3346,7 +3346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898695349}
   m_Layer: 0
-  m_Name: Comida
+  m_Name: food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3388,7 +3388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (2)
+      value: Platform_Normal_03
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3542,7 +3542,7 @@ GameObject:
   - component: {fileID: 989094863}
   - component: {fileID: 989094862}
   m_Layer: 0
-  m_Name: Tierra
+  m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3638,7 +3638,7 @@ GameObject:
   - component: {fileID: 1004767984}
   - component: {fileID: 1004767985}
   m_Layer: 0
-  m_Name: world_tileset_1 (1)
+  m_Name: Groundtileset_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3847,7 +3847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328242289367499427, guid: e3a992fc1745dee468165e5eea170c4f, type: 3}
       propertyPath: m_Name
-      value: Jam_0 (3)
+      value: Jam_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3869,7 +3869,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (4)
+      value: Platform_Normal_05
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4208,7 +4208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171126367}
   m_Layer: 0
-  m_Name: Pinos
+  m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4254,7 +4254,7 @@ GameObject:
   - component: {fileID: 1173592496}
   - component: {fileID: 1173592495}
   m_Layer: 0
-  m_Name: arbolLocal
+  m_Name: TreeRestaurant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4344,7 +4344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (2)
+      value: Platform_Normal_03
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4520,7 +4520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328242289367499427, guid: e3a992fc1745dee468165e5eea170c4f, type: 3}
       propertyPath: m_Name
-      value: Jam_0 (6)
+      value: Jam_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4584,7 +4584,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm
+      value: Platform_Normal_01
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4646,7 +4646,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (9)
+      value: Platform_Normal_10
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4801,7 +4801,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (2)
+      value: Platform_Normal_03
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4863,7 +4863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1417342659}
   m_Layer: 0
-  m_Name: Plataformas
+  m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4981,7 +4981,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm
+      value: Platform_Normal_01
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5076,7 +5076,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (1)
+      value: Platform_Normal_02
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5140,7 +5140,7 @@ GameObject:
   - component: {fileID: 1559592421}
   - component: {fileID: 1559592420}
   m_Layer: 5
-  m_Name: TextoEstado
+  m_Name: StateText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5276,7 +5276,7 @@ GameObject:
   - component: {fileID: 1566288821}
   - component: {fileID: 1566288822}
   m_Layer: 0
-  m_Name: world_tileset_1
+  m_Name: Groundtileset_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5430,7 +5430,7 @@ GameObject:
   - component: {fileID: 1658310795}
   - component: {fileID: 1658310794}
   m_Layer: 0
-  m_Name: pasto
+  m_Name: grass
   m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5685,7 +5685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328242289367499427, guid: e3a992fc1745dee468165e5eea170c4f, type: 3}
       propertyPath: m_Name
-      value: Jam_0 (5)
+      value: Jam_5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5708,7 +5708,7 @@ GameObject:
   - component: {fileID: 1954914745}
   - component: {fileID: 1954914744}
   m_Layer: 0
-  m_Name: cielo
+  m_Name: sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5889,7 +5889,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (3)
+      value: Platform_Normal_04
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5951,7 +5951,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (1)
+      value: Platform_Normal_02
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6015,7 +6015,7 @@ GameObject:
   - component: {fileID: 2059122252}
   - component: {fileID: 2059122251}
   m_Layer: 0
-  m_Name: zorroLocal
+  m_Name: FoxRestaurant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6179,7 +6179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328242289367499427, guid: e3a992fc1745dee468165e5eea170c4f, type: 3}
       propertyPath: m_Name
-      value: Jam_0 (1)
+      value: Jam_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6201,7 +6201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087790183}
   m_Layer: 0
-  m_Name: plat
+  m_Name: Platform_Normal_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6239,7 +6239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (3)
+      value: Platform_Normal_04
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6370,7 +6370,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm
+      value: Platform_Normal_07
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6541,7 +6541,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3684419301279990494, guid: bebcaba1cbb863f408da9c755be4dbf8, type: 3}
       propertyPath: m_Name
-      value: Fish_0
+      value: Fish_2
       objectReference: {fileID: 0}
     - target: {fileID: 8574466549746889865, guid: bebcaba1cbb863f408da9c755be4dbf8, type: 3}
       propertyPath: m_LocalPosition.x
