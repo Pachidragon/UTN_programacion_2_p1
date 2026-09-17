@@ -3,20 +3,26 @@ using TMPro; // para usar el texto en pantalla
 using UnityEngine.SceneManagement;
 
 
-public class jugador : MonoBehaviour
+public class player : MonoBehaviour
 {
-    Rigidbody2D rb;
-    Animator anim;
+    private Rigidbody2D rb;
+    private Animator anim;
 
     // estados
-    bool estaEnElSuelo = false;
-    bool tieneElPedido = false;
-    bool gano = false;
-    bool perdio = false;    
+    private bool isInGround = false;
+    private bool hasFood = false;
+    private bool win = false;
+    private bool lose= false;    
     
     // tiempo
-    float tiempoRestante = 30f;
-    public TextMeshProUGUI textoEstado;
+    private float remainingTime = 30f;
+
+    // UI
+    [SerializeField] private TextMeshProUGUI stateText;
+    public bool HasFood
+    {
+        get { return hasFood; }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,64 +36,62 @@ public class jugador : MonoBehaviour
     {
         // Movimientos
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)) // izquierda
         {
             transform.Translate(-10f * Time.deltaTime, 0, 0);
             transform.localScale = new Vector3(5.68016f, 5.650067f, 1);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D)) // derecha
         { 
             transform.Translate(10f * Time.deltaTime, 0, 0);
             transform.localScale = new Vector3(-5.68016f, 5.650067f, 1);
         }
 
 
-        if (Input.GetKeyDown(KeyCode.W) && estaEnElSuelo)
+        if (Input.GetKeyDown(KeyCode.W) && isInGround) // salto
             {
              rb.linearVelocity = new Vector2(rb.linearVelocity.x, 6.5f);
             }
 
         // Animaciones
 
-        anim.SetBool("corriendo",
+        anim.SetBool("Run",
             Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D));
-        anim.SetBool("saltando", 
-            Input.GetKeyDown(KeyCode.W) || !estaEnElSuelo);  
-
-
+        anim.SetBool("Jump", 
+            Input.GetKeyDown(KeyCode.W) || !isInGround);  
 
         // Estados y mensajes
 
-        if (tieneElPedido && !gano && !perdio)
+        if (hasFood && !win && !lose)
         {
-            tiempoRestante = tiempoRestante - Time.deltaTime;
-            
+            remainingTime = remainingTime - Time.deltaTime; // Tiempo restante
+
         }
 
-        if (tiempoRestante <= 0 && !gano && !perdio)
+        if (remainingTime <= 0 && !win && !lose)
 
-        { 
-            perdio = true;
+        {
+            lose = true;
         }
 
-        if (!tieneElPedido)
+        if (!hasFood)
         {
-            textoEstado.text = "-> Andá a buscar la comida al restaurante :D ";
+            stateText.text = "-> Andá a buscar la comida al restaurante :D ";
         }
-        else if (perdio)
+        else if (lose)
         {
-            textoEstado.text = "Se enfrío la comida :( ";
-            SceneManager.LoadScene("derrota");
+            stateText.text = "Se enfrío la comida :( ";
+            SceneManager.LoadScene("lose");
         }
-        else if (gano)
+        else if (win)
         {
-            textoEstado.text = "Muchas gracias, Buen provecho :D";
-            SceneManager.LoadScene("victoria");
+            stateText.text = "Muchas gracias, Buen provecho :D";
+            SceneManager.LoadScene("win");
         }
         else
         {
-            textoEstado.text = "<- Volve antes de que se enfrie :O \n Tiempo = " + tiempoRestante.ToString("F0");
+            stateText.text = "<- Volve antes de que se enfrie :O \n Tiempo = " + remainingTime.ToString("F0");
         }
 
     }
@@ -96,7 +100,7 @@ public class jugador : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            estaEnElSuelo = true;
+            isInGround = true;
         }
     }
 
@@ -104,7 +108,7 @@ public class jugador : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            estaEnElSuelo = false;
+            isInGround = false;
         }
     }
 
@@ -112,12 +116,12 @@ public class jugador : MonoBehaviour
     {
         if (other.CompareTag("Local"))
         {
-            tieneElPedido = true;
+            hasFood = true;
                    }
 
-        if (other.CompareTag("Casa") && tieneElPedido)
+        if (other.CompareTag("Casa") && hasFood) // condicion de victoria, llego a la casa y tiene la comida
         {
-            gano = true;         
+            win = true;         
 
         }
     }
