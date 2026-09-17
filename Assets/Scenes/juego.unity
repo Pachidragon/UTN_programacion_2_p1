@@ -2496,7 +2496,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (3)
+      value: Platform_Normal_04
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3005,7 +3005,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (4)
+      value: Platform_Normal_05
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3931,7 +3931,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (5)
+      value: Platform_Normal_06
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4739,7 +4739,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6225225012133187501, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_Name
-      value: platformas_norm (6)
+      value: Platform_Normal_07
       objectReference: {fileID: 0}
     - target: {fileID: 7405829952190985568, guid: fae076097046e664b8a9b11fb59fcc73, type: 3}
       propertyPath: m_LocalPosition.x
