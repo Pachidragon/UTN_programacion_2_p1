@@ -24,17 +24,24 @@ public class player : MonoBehaviour
         get { return hasFood; }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+        void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
-        // Movimientos
+        HandleMovement();
+        HandleAnimation();
+        HandleGameState();
+
+    }
+
+    private void HandleMovement() // movimiento del jugador
+    {
 
         if (Input.GetKey(KeyCode.A)) // izquierda
         {
@@ -43,29 +50,33 @@ public class player : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.D)) // derecha
-        { 
+        {
             transform.Translate(10f * Time.deltaTime, 0, 0);
             transform.localScale = new Vector3(-5.68016f, 5.650067f, 1);
         }
 
 
         if (Input.GetKeyDown(KeyCode.W) && isInGround) // salto
-            {
-             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 6.5f);
-            }
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 6.5f);
+        }
+    }
 
-        // Animaciones
+    private void HandleAnimation() // animaciones
 
-        anim.SetBool("Run",
-            Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D));
-        anim.SetBool("Jump", 
-            Input.GetKeyDown(KeyCode.W) || !isInGround);  
+    {
+        anim.SetBool("Run", Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)); // correr
+        anim.SetBool("Jump", Input.GetKeyDown(KeyCode.W) || !isInGround); // saltar
 
-        // Estados y mensajes
+    }
+
+    private void HandleGameState() // Estado del juego
+
+    {
 
         if (hasFood && !win && !lose)
         {
-            remainingTime = remainingTime - Time.deltaTime; // Tiempo restante
+            remainingTime -= Time.deltaTime; // Tiempo restante
 
         }
 
