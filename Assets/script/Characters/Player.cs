@@ -3,11 +3,10 @@ using TMPro; // para usar el texto en pantalla
 using UnityEngine.SceneManagement;
 
 
-public class player : MonoBehaviour
+public class player : Character
 {
     private Rigidbody2D rb;
-    private Animator anim;
-
+    
     // estados
     private bool isInGround = false;
     private bool hasFood = false;
@@ -24,14 +23,24 @@ public class player : MonoBehaviour
         get { return hasFood; }
     }
 
-
-        void Start()
+    public void GetFood()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        hasFood = true;
     }
 
-  
+    public void WinGame()
+    {
+        win = true;
+    }
+
+
+    protected override void Start()
+    {
+        base.Start();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+
     void Update()
     {
         HandleMovement();
@@ -125,17 +134,14 @@ public class player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Local"))
-        {
-            hasFood = true;
-                   }
+        IInteractable interactable = other.GetComponent<IInteractable>();
 
-        if (other.CompareTag("Casa") && hasFood) // condicion de victoria, llego a la casa y tiene la comida
+        if (interactable != null)
         {
-            win = true;         
-
+            interactable.Interact(this);
         }
     }
 
-    
+
 }
+

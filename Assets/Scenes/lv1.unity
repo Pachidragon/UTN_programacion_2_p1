@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 138334469}
   - component: {fileID: 138334468}
   - component: {fileID: 138334470}
+  - component: {fileID: 138334471}
   m_Layer: 0
   m_Name: House
   m_TagString: Casa
@@ -658,6 +659,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19261765, y: 0.49649364}
   m_EdgeRadius: 0
+--- !u!114 &138334471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138334467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 870326d68f82ca344b17f6561015ccf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
 --- !u!1 &147611575
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ed5956e89d6524c837cb9dd396525c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::jugador
-  textoEstado: {fileID: 1559592420}
+  stateText: {fileID: 1559592420}
 --- !u!50 &147611581
 Rigidbody2D:
   serializedVersion: 5
@@ -1994,6 +2007,7 @@ GameObject:
   - component: {fileID: 462944602}
   - component: {fileID: 462944601}
   - component: {fileID: 462944603}
+  - component: {fileID: 462944604}
   m_Layer: 0
   m_Name: Restaurant
   m_TagString: Local
@@ -2121,6 +2135,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.30068704, y: 0.4610685}
   m_EdgeRadius: 0
+--- !u!114 &462944604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462944600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432dd63f3f4d4f24abcdb4e912e03933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Restaurant
 --- !u!1001 &469133870
 PrefabInstance:
   m_ObjectHideFlags: 0

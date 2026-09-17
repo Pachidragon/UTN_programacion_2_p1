@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/inicio.unity
+    path: Assets/Scenes/start.unity
     guid: 006ea144d3422374f959b46e72829d64
   - enabled: 1
-    path: Assets/Scenes/juego.unity
+    path: Assets/Scenes/lv1.unity
     guid: 0d1d520d53cbb2642bd96fa192757448
   - enabled: 1
-    path: Assets/Scenes/derrota.unity
+    path: Assets/Scenes/loose.unity
     guid: 39694c5af28045146b13593ad27a3610
   - enabled: 1
-    path: Assets/Scenes/victoria.unity
+    path: Assets/Scenes/win.unity
     guid: b3cfb16b4e2e4cc4fa776365f84dee4d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
