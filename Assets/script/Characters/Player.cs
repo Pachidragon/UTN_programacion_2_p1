@@ -13,9 +13,7 @@ public class player : Character
     private bool win = false;
     private bool lose= false;    
     
-    // tiempo
-    private float remainingTime = 30f;
-
+    
     // UI
     [SerializeField] private TextMeshProUGUI stateText;
     public bool HasFood
@@ -83,14 +81,8 @@ public class player : Character
 
     {
 
-        if (hasFood && !win && !lose)
-        {
-            remainingTime -= Time.deltaTime; // Tiempo restante
 
-        }
-
-        if (remainingTime <= 0 && !win && !lose)
-
+        if (GameManager.Instance.RemainingTime <= 0 && !win && !lose)
         {
             lose = true;
         }
@@ -111,7 +103,7 @@ public class player : Character
         }
         else
         {
-            stateText.text = "<- Volve antes de que se enfrie :O \n Tiempo = " + remainingTime.ToString("F0");
+            stateText.text = "<- Volve antes de que se enfrie :O \n Tiempo = " + GameManager.Instance.RemainingTime.ToString("F0");
         }
 
     }

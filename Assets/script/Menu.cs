@@ -18,13 +18,13 @@ public class Menuses : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("inicio");
+            SceneManager.LoadScene("start");
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
 
-            SceneManager.LoadScene("juego");
+            SceneManager.LoadScene("lv1");
 
         }
 
