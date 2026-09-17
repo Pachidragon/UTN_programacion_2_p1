@@ -21,8 +21,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            Debug.Log("GameManager creado");
-        }
+                    }
         else
         {
             Destroy(gameObject);
