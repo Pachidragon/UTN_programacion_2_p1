@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using TMPro; // para usar el texto en pantalla
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 
 public class player : Character
 {
     private Rigidbody2D rb;
-    
+
     // estados
-    private bool isInGround = false;
+    private HashSet<Collider2D> groundColliders = new HashSet<Collider2D>();
+    private bool IsInGround() { return groundColliders.Count > 0;  }
     private bool hasFood = false;
     private bool win = false;
     private bool lose= false;    
@@ -63,18 +65,16 @@ public class player : Character
         }
 
 
-        if (Input.GetKeyDown(KeyCode.W) && isInGround) // salto
+        if (Input.GetKeyDown(KeyCode.W) && IsInGround()) // salto
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 6.5f);
         }
     }
 
-    private void HandleAnimation() // animaciones
-
+    private void HandleAnimation()
     {
-        anim.SetBool("Run", Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)); // correr
-        anim.SetBool("Jump", Input.GetKeyDown(KeyCode.W) || !isInGround); // saltar
-
+        anim.SetBool("Run", Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D));
+        anim.SetBool("Jump", !IsInGround());
     }
 
     private void HandleGameState() // Estado del juego
@@ -112,17 +112,42 @@ public class player : Character
     {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            isInGround = true;
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y > 0.5f)
+                {
+                    groundColliders.Add(collision.collider);
+                    break;
+                }
+            }
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Suelo"))
+        {
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y > 0.5f)
+                {
+                    groundColliders.Add(collision.collider);
+                    return;
+                }
+            }
+
+            groundColliders.Remove(collision.collider);
+        }
+    }
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            isInGround = false;
+            groundColliders.Remove(collision.collider);
         }
     }
+
+        
 
     private void OnTriggerEnter2D(Collider2D other)
     {
